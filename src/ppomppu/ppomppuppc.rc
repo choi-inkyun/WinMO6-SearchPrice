@@ -1,0 +1,274 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resourceppc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlresce.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 141, 79
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "ppomppu v1.10",IDC_STATIC,38,10,70,8,SS_NOPREFIX
+    LTEXT           "(c) Copyright dingpong",IDC_STATIC,38,25,77,8
+    LTEXT           "제작 : 최인균(dingpong)\n홈페이지 : www.dingpong.net",IDC_STATIC,9,48,116,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "Option"
+    BEGIN
+        POPUP "정렬"
+        BEGIN
+            MENUITEM "정확도순",                        ID_SORT_SIMILARITY
+            MENUITEM "업데이트순",                       ID_SORT_UPDATE
+            MENUITEM "높은가격순",                       ID_SORT_HIGHPRICE
+            MENUITEM "낮은가격순",                       ID_SORT_LOWPRICE
+        END
+        POPUP "화면갯수"
+        BEGIN
+            MENUITEM "10",                          ID_DISPLAY_10
+            MENUITEM "30",                          ID_DISPLAY_30
+            MENUITEM "50",                          ID_DISPLAY_50
+            MENUITEM "75",                          ID_DISPLAY_75
+            MENUITEM "100",                         ID_DISPLAY_100
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "정보",                          ID_APP_ABOUT
+        MENUITEM "종료",                          ID_APP_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ppomppu.ico"
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resourceppc.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlresce.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""ppomppuppc.rc2""\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "Q",            ID_APP_EXIT,            VIRTKEY, CONTROL
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,0
+ PRODUCTVERSION 1,0,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "ppomppu Module"
+            VALUE "FileVersion", "1, 0, 1, 0"
+            VALUE "InternalName", "ppomppu"
+            VALUE "LegalCopyright", "Copyright dingpong"
+            VALUE "OriginalFilename", "ppomppu.exe"
+            VALUE "ProductName", "ppomppu Module"
+            VALUE "ProductVersion", "1, 0, 1, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "ppomppu"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "New"
+    ID_FILE_OPEN            "Open"
+    ID_FILE_CLOSE           "Close"
+    ID_FILE_SAVE            "Save"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Program information"
+    ID_APP_EXIT             "Quit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Next Pane"
+    ID_PREV_PANE            "Previous Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split to panes"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase"
+    ID_EDIT_CLEAR_ALL       "Erase All"
+    ID_EDIT_COPY            "Copy"
+    ID_EDIT_CUT             "Cut"
+    ID_EDIT_FIND            "Find"
+    ID_EDIT_PASTE           "Paste"
+    ID_EDIT_REPEAT          "Repeat"
+    ID_EDIT_REPLACE         "Replace"
+    ID_EDIT_SELECT_ALL      "Select All"
+    ID_EDIT_UNDO            "Undo"
+    ID_EDIT_REDO            "Redo"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MENU_OK              "Done"
+    ID_MENU_CANCEL          "Cancel"
+    ID_MENU                 "Menu"
+    ID_ACTION               "Action"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_FULLSCREEN      "Full screen"
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "ppomppuppc.rc2"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
